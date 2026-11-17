@@ -1,0 +1,6 @@
+{
+  "name": "CacheLab",
+  "description": "Interactive HTTP caching simulator, header inspector, policy comparator, and educational laboratory for backend and protocol engineers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

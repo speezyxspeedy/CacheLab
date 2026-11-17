@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  code,
+  pre,
+  kbd,
+  samp,
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes flowDash {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.animate-flow-dash {
+  animation: flowDash 0.9s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-flow-dash {
+    animation: none;
+  }
+}
